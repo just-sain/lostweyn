@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.bg-welcome-image {
+		background: linear-gradient(rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%),
+			url('/bg-2.jpg') center center / cover no-repeat fixed;
+
+		@apply w-full h-screen z-0 object-cover object-center absolute top-0 left-0;
+	}
+
+	.bg-info-image {
+		background: linear-gradient(
+				rgba(0, 0, 0, 1) 0%,
+				rgba(0, 0, 0, 0) 30%,
+				rgba(0, 0, 0, 0) 70%,
+				rgba(0, 0, 0, 1) 100%
+			),
+			url('/bg-9.jpg') center center / cover no-repeat fixed;
+
+		@apply w-full h-screen z-0 object-cover object-center absolute top-0 left-0;
+	}
+}
